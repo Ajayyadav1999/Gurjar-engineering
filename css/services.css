@@ -1,0 +1,147 @@
+.service-grid {
+    background: #fcfcfc;
+}
+
+.service-title h4 {
+    position: relative;
+    display: inline-block;
+}
+
+.service-icon {
+    position: relative;
+}
+
+.service-title p {
+    padding: 0 190px;
+    margin-bottom: 10px;
+}
+
+.about-info-text h2 {
+    margin-bottom: 23px;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: .9;
+}
+
+.about-info-text p {
+    padding: 0 100px;
+    font-size: 18px;
+    margin-bottom: 26px;
+    position: relative;
+}
+
+.about-content p {
+    margin-bottom: 0;
+}
+
+.about-info-text a {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.service-icon i {
+    font-size: 40px;
+    color: #e8bc00;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Add this new class */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-wrap {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+    position: relative;
+    flex: 1;
+    margin: 10px; /* Add some margin for spacing between service boxes */
+}
+
+.service-wrap p {
+    position: relative;
+}
+
+.service-wrap:hover {
+    background-image: url(https://i.ibb.co/mykzQks/services1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+}
+
+.service-wrap:hover:before {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+}
+
+.service-wrap:hover h4,
+.service-wrap:hover p {
+    color: #fff;
+}
+
+.service-wrap h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.service-wrap a {
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
+
+
+/* Add the overlay class */
+.why-choose-us {
+    position: relative;
+    height: 60vh;
+    background-image: url('../assets/2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section-title {
+    font-size: 36px;
+    margin-top: 50px;
+    color: #fff;
+    z-index: 99;
+    position: relative; /* Add this */
+}
+
+.description{
+    font-size: 18px;
+}
+
+.choose-us-item {
+    text-align: center; /* Center the content */
+    position: relative; /* Add this */
+    z-index: 100; /* Put content above overlay */
+    margin-top: 20px; /* Adjust as needed */
+}
+.count {
+    font-weight: 300; /* Adjust timing as needed */
+  }
+

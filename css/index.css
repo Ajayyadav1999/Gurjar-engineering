@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+.custom-nav-link {
+    color: #fff; /* Change this color to your desired color */
+}
+.activeNav{
+  color: #CFA806;
+  font-weight: bold;
+}
+
+.opacity-image-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.opacity-image {
+  opacity: 1; /* Adjust the opacity value as needed */
+}
+
+.carousel-caption {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: start;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the background color as needed */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+.carousel-title {
+  color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    justify-content: start;
+}
+.carousel-text{
+  color: #ffffff;
+  width: 35vw;
+  font-size: 1rem;
+}
+
+@keyframes slide-right {
+  from {
+     margin-left: -500px;
+  }
+
+  to {
+     margin-left: 0%;
+  }
+}
+
+/* header start */
+.header-section {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    position: relative;
+    background-image: url('../assets/how-much-can-you-make-engineering.webp');
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Set height to 100% of viewport height */
+  }
+  
+  .header-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .header-section .container {
+    position: relative;
+    z-index: 1;
+    left: 0;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .header-section h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    justify-content: start;
+  }
+  
+  .header-section p {
+    color: #ffffff;
+    width: 35vw;
+    font-size: 1rem;
+  }
+  
+/* header end */
+
+
+/* Services start */
+.services-section {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+}
+.service-card {
+    border: none;
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+}
+.service-card:hover {
+    transform: scale(1.05);
+}
+.service-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+.service-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.service-description {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Services End */
+
+/* Gallery start*/
+
+.imgcontainer {
+    margin: auto;
+    border: #fff solid 5px;
+    background: #fff;
+  }
+  
+  /* mak images fill their container*/
+  img {
+    max-width: 100%;
+  }
+  img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  /* CSS Grid*/
+  .img-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+  }
+  
+  /* Media Query for changing grid on bigger screens*/
+  
+  /* Bigger than Phones(tablet) */
+  @media only screen and (min-width: 750px) {
+    .img-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Bigger than Phones(laptop / desktop) */
+  @media only screen and (min-width: 970px) {
+    .img-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+/* Gallery  end*/
+
+/* Testimonial start */
+.testimonial-section {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+}
+.testimonial-card {
+    border: none;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+.testimonial-content {
+    margin-top: 20px;
+}
+.testimonial-author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.testimonial-role {
+    font-size: 1rem;
+    color: #666;
+}
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+/* Testimonial ends */
+
+/* footer */
+.social-network a.icoYoutube:hover {
+  background-color: #FF0000;
+}
+
+.social-network a.icoYoutube:hover i {
+  color: #fff;
+}
+
+/* Instagram */
+.social-network a.icoInstagram:hover {
+  background-color: #E4405F;
+}
+
+.social-network a.icoInstagram:hover i {
+  color: #fff;
+}
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  margin-top: 5px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
